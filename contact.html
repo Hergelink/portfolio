@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/contact.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="/form.js" defer></script>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <div class="formContainer">
+      <form  >
+        <label>
+          Email:
+          <input type="email" name="email" id="emailInput" />
+        </label>
+        <label>
+            Subject:
+            <input type="text" name="subject" id="subjectInput" />
+          </label>
+        <label>
+          Message:
+          <textarea name="message" rows="5" id="textInput"></textarea>
+        </label>
+        <button type="submit" id="submitBtn">Send</button>
+      </form>
+    </div>
+    <a href="/" id="backToPortfolio">Back to Portfolio</a>
+  </body>
+</html>
