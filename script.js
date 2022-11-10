@@ -1,5 +1,8 @@
 const gallery = document.getElementById('gallery');
 
+
+
+
 window.onmousemove = (e) => {
   const mouseX = e.clientX,
     mouseY = e.clientY;
@@ -24,3 +27,5 @@ window.onmousemove = (e) => {
     })
     
 };
+
+

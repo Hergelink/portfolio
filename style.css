@@ -1,11 +1,53 @@
-body {
+/* body {
   background-color: #121212;
   height: 100vh;
   margin: 0px;
   overflow: hidden;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #121212;
+  height: 100vh;
+  
+  margin: 0px;
+  overflow: hidden;
+}
+
+
+#mobileWarning {
+  text-align: center;
+  margin-top: 10rem;
+  color: white;
+  width: 60%;
+  margin-inline: auto;
 }
 
 #gallery {
+  display: none;
+}
+
+/* 49em = 768px */
+@media (min-width: 48em) {
+
+  body {
+    background-color: #121212;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+  }
+  
+  #mobilePortfolio {
+    display: none;
+  }
+
+#gallery {
+  display: block;
   height: 140vmax;
   width: 140vmax;
   position: absolute;
@@ -156,3 +198,5 @@ body {
 }
 
 
+  
+}
