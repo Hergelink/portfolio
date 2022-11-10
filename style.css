@@ -4,6 +4,7 @@
   margin: 0px;
   overflow: hidden;
 } */
+
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +31,13 @@ body {
   display: none;
 }
 
+
+
+
+
+
+
+
 /* 49em = 768px */
 @media (min-width: 48em) {
   body {
@@ -45,8 +53,10 @@ body {
 
   #gallery {
     display: block;
-    height: 140vmax;
-    width: 140vmax;
+    /* height: 140vmax;
+    width: 140vmax; */
+    height: 120vmax;
+    width: 120vmax;
     position: absolute;
   }
 
