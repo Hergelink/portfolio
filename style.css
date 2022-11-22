@@ -90,9 +90,8 @@ body {
 
   #contactContainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     text-decoration: none;
 
     color: white;
@@ -108,22 +107,9 @@ body {
   #contactContainer span {
     opacity: 1;
     font-size: 3.5rem;
-    position: absolute;
-    top: 32%;
   }
 
-  #contactContainer p {
-    opacity: 0;
-    transition: opacity 800ms ease;
-    margin-top: 0.1rem;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 65%;
-  }
-
-  #contactContainer:hover p {
-    opacity: 1;
-  }
+ 
 
   .tile:nth-child(1) {
     background-color: #d6575b;
