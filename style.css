@@ -129,9 +129,9 @@ body {
 
   .tile:nth-child(3) {
     background-color: #672325;
-    height: 24%;
-    width: 18%;
-    left: 12%;
+    height: 28%;
+    width: 25%;
+    left: 10%;
     top: 28%;
   }
 
@@ -139,7 +139,7 @@ body {
     background-color: #7b292c;
     height: 25%;
     width: 20%;
-    left: 36%;
+    left: 40%;
     top: 45%;
   }
 
@@ -148,7 +148,7 @@ body {
     height: 26%;
     width: 22%;
     left: 8%;
-    top: 60%;
+    top: 65%;
   }
 
   .tile:nth-child(6) {
