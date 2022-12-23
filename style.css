@@ -113,8 +113,8 @@ body {
 
   .tile:nth-child(1) {
     background-color: #d6575b;
-    height: 16%;
-    width: 20%;
+    height: 15%;
+    width: 27%;
     left: 5%;
     top: 5%;
   }
