@@ -31,13 +31,6 @@ body {
   display: none;
 }
 
-
-
-
-
-
-
-
 /* 49em = 768px */
 @media (min-width: 48em) {
   body {
@@ -102,14 +95,14 @@ body {
     left: 63%;
     top: 50%;
     position: relative;
+    animation: pulse 2s;
+    animation-iteration-count: 5;
   }
 
   #contactContainer span {
     opacity: 1;
     font-size: 3.5rem;
   }
-
- 
 
   .tile:nth-child(1) {
     background-color: #d6575b;
@@ -143,10 +136,11 @@ body {
     top: 45%;
   }
 
+  /* StoryTime */
   .tile:nth-child(5) {
     background-color: #8e2f32;
     height: 26%;
-    width: 22%;
+    width: 30%;
     left: 8%;
     top: 65%;
   }
@@ -175,6 +169,7 @@ body {
     top: 6%;
   }
 
+  /* QR Code */
   .tile:nth-child(9) {
     background-color: #c4454a;
     height: 10%;
@@ -202,5 +197,19 @@ body {
   .stackIcon {
     width: 35px;
     height: 35px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #c44549c8;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px #c4454945;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #c4454924;
   }
 }

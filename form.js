@@ -1,8 +1,7 @@
 const emailInput = document.getElementById('emailInput');
 const subjectInput = document.getElementById('subjectInput');
 const textInput = document.getElementById('textInput');
-const submitBtn = document.getElementById('submitBtn');
-
+const formElement = document.querySelector('form');
 
 const redirect = () => {
     window.location.replace('/');
@@ -10,6 +9,7 @@ const redirect = () => {
 
 const handleSubmit = (e) => {
   e.preventDefault();
+
 
   const inputs = {
     email: emailInput.value,
@@ -38,4 +38,5 @@ const handleSubmit = (e) => {
   setTimeout(redirect, 5000);
 };
 
-submitBtn.addEventListener('click', handleSubmit);
+formElement.addEventListener('submit', handleSubmit)
+
