@@ -18,6 +18,16 @@ body {
   display: none;
 }
 
+.visualCode {
+  display: block;
+  font-size: 1.2rem;
+  color: rgba(212, 195, 195, 0.426);
+}
+
+.lastCode {
+  margin-bottom: 1rem;
+}
+
 /* Mobile View */
 
 header {
@@ -38,10 +48,12 @@ section {
 /* Hero Section */
 h1 {
   font-size: 4rem;
+  padding-left: 0.5rem;
 }
 
 #heroText {
-  padding: 2rem 0;
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
   font-size: 1.2rem;
   color: rgb(189, 188, 188);
   /* max-width: 600px; */
