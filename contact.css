@@ -108,6 +108,7 @@ button:hover {
   color: rgba(245, 245, 245, 255);
   cursor: pointer;
   margin-inline: auto;
+  margin-bottom: 3rem;
   font-size: 18px;
 }
 
@@ -116,7 +117,6 @@ button:hover {
   color: #d16568;
 }
 
-/* 49em = 768px */
 @media (min-width: 48em) {
   .formContainer {
     max-width: 500px;

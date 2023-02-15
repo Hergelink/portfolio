@@ -1,7 +1,7 @@
 const gallery = document.getElementById('gallery');
 
 function checkScreenSize() {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1182) {
     window.onmousemove = (e) => {
       const mouseX = e.clientX,
         mouseY = e.clientY;
@@ -26,9 +26,7 @@ function checkScreenSize() {
         }
       );
     };
-  } else {
-    return;
-  }
+  } 
 }
 
 setInterval(checkScreenSize, 1000);

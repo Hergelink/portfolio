@@ -1,9 +1,4 @@
-/* body {
-  background-color: #121212;
-  height: 100vh;
-  margin: 0px;
-  overflow: hidden;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -12,30 +7,67 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   background-color: #121212;
-  height: 100vh;
-
-  margin: 0px;
-  overflow: hidden;
-}
-
-#mobileWarning {
-  text-align: center;
-  margin-top: 10rem;
   color: white;
-  width: 60%;
-  margin-inline: auto;
+  margin: 0px;
+ 
 }
 
 #gallery {
   display: none;
 }
 
-/* 49em = 768px */
-@media (min-width: 48em) {
+/* Mobile View */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem;
+}
+
+header span {
+  padding: 0 0.5rem;
+  font-weight: 700;
+}
+
+section {
+  padding: 1rem 1rem;
+}
+
+/* Hero Section */
+h1 {
+  font-size: 4rem;
+}
+
+#heroText {
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  color: rgb(189, 188, 188);
+  /* max-width: 600px; */
+}
+
+
+
+/* Project Section */
+
+@media (min-width: 700px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  #heroText {
+    font-size: 1.4rem;
+    max-width: 800px;
+  }
+}
+
+
+/* Desktop View */
+
+@media (min-width: 1182px) {
   body {
-    background-color: #121212;
-    height: 100vh;
     margin: 0px;
     overflow: hidden;
   }
