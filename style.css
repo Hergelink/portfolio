@@ -45,6 +45,27 @@ section {
 }
 
 /* Hero Section */
+
+.gradients {
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+}
+
+.gradients.circle.orange {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 61, 0, 0.15) 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  left: -12rem;
+  top: -15rem;
+  height: 18rem;
+}
+
 h1 {
   font-size: 4rem;
   padding-left: 0.5rem;
