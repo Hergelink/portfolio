@@ -11,7 +11,6 @@ body {
   background-color: #121212;
   color: white;
   margin: 0px;
- 
 }
 
 #gallery {
@@ -25,7 +24,7 @@ body {
 }
 
 .lastCode {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Mobile View */
@@ -51,6 +50,18 @@ h1 {
   padding-left: 0.5rem;
 }
 
+#tagline {
+  background-image: linear-gradient(90deg, white, rgb(70, 64, 235));
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+}
+
+#tagline:hover {
+  background-size: 100% 3px;
+}
+
 #heroText {
   padding: 0.5rem 0;
   padding-left: 0.5rem;
@@ -59,11 +70,50 @@ h1 {
   /* max-width: 600px; */
 }
 
-
-
 /* Project Section */
 
+h2 {
+  font-size: 3rem;
+  padding-left: 0.5rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard {
+  max-width: 700px;
+  margin: 0.8rem 0 0.8rem 0.5rem;
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+}
+
+.projectImg {
+  width: 100%;
+  object-fit: contain;
+}
+.projectInfo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projectInfo h4 {
+  font-size: 1.2rem;
+}
+
+/* Large Mobile or Tablet View */
+
 @media (min-width: 700px) {
+  section {
+    padding: 1rem 4rem;
+  }
 
   h1 {
     font-size: 5rem;
@@ -74,7 +124,6 @@ h1 {
     max-width: 800px;
   }
 }
-
 
 /* Desktop View */
 
