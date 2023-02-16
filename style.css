@@ -46,6 +46,10 @@ section {
 
 /* Hero Section */
 
+#heroContainer {
+  position: relative;
+}
+
 .gradients {
   display: flex;
   flex: 1 1;
@@ -55,15 +59,43 @@ section {
   z-index: -1;
 }
 
-.gradients.circle.orange {
+.circle {
+  position: absolute;
+  height: 30rem;
+  width: 30rem;
+}
+
+.orange {
   background: radial-gradient(
     50% 50% at 50% 50%,
-    rgba(255, 61, 0, 0.15) 0,
+    /* rgba(255, 61, 0, 0.15) 0, */
+    rgba(255, 61, 0, 0.30) 0,
     hsla(0, 0%, 100%, 0) 100%
   );
-  left: -12rem;
-  top: -15rem;
-  height: 18rem;
+  left: -2rem;
+  bottom: -26rem;
+}
+
+.purple {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    /* rgba(101, 31, 255, 0.15) 0, */
+    rgba(101, 31, 255, 0.20) 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  right: -18rem;
+  top: 0rem;
+}
+
+.yellow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    /* rgba(255, 213, 79, 0.2) 0, */
+    rgba(255, 213, 79, 0.2) 0,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  bottom: -23rem;
+  left: 1rem;
 }
 
 h1 {
@@ -129,27 +161,8 @@ h2 {
   font-size: 1.5rem;
 }
 
-.mobileLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.mobileLinkContainer {
-  width: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.mobileLinkContainer h5 {
-  font-size: 1.2rem;
-}
-
-.icons {
-  width: 34px;
-  height: 34px;
+.projectInfo p {
+  font-size: 1.1rem;
 }
 
 .mobileTechStack {
@@ -157,7 +170,7 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 0rem 1rem;
 }
 
 .mobileTechStack h5 {
@@ -171,6 +184,39 @@ h2 {
 }
 
 .techIcons:hover {
+  transform: scale(1.2);
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.mobileLinkContainer {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobileLinkContainer h5 {
+  font-size: 1.2rem;
+}
+
+.mobileLinkContainer span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.icons {
+  width: 34px;
+  height: 34px;
+  transition: ease 0.4s;
+}
+
+.icons:hover {
   transform: scale(1.2);
 }
 
