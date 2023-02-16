@@ -68,8 +68,8 @@ section {
 
 .circle {
   position: absolute;
-  height: 30rem;
-  width: 30rem;
+  height: 15rem;
+  width: 15rem;
 }
 
 .orange {
@@ -79,7 +79,7 @@ section {
     hsla(0, 0%, 100%, 0) 100%
   );
   left: -2rem;
-  bottom: -26rem;
+  bottom: -19rem;
 }
 
 .purple {
