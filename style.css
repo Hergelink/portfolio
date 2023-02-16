@@ -68,8 +68,7 @@ section {
 .orange {
   background: radial-gradient(
     50% 50% at 50% 50%,
-    /* rgba(255, 61, 0, 0.15) 0, */
-    rgba(255, 61, 0, 0.30) 0,
+    rgba(255, 61, 0, 0.3) 0,
     hsla(0, 0%, 100%, 0) 100%
   );
   left: -2rem;
@@ -79,8 +78,7 @@ section {
 .purple {
   background: radial-gradient(
     50% 50% at 50% 50%,
-    /* rgba(101, 31, 255, 0.15) 0, */
-    rgba(101, 31, 255, 0.20) 0,
+    rgba(101, 31, 255, 0.2) 0,
     hsla(0, 0%, 100%, 0) 100%
   );
   right: -18rem;
@@ -90,7 +88,6 @@ section {
 .yellow {
   background: radial-gradient(
     50% 50% at 50% 50%,
-    /* rgba(255, 213, 79, 0.2) 0, */
     rgba(255, 213, 79, 0.2) 0,
     hsla(0, 0%, 100%, 0) 100%
   );
@@ -101,6 +98,41 @@ section {
 h1 {
   font-size: 4rem;
   padding-left: 0.5rem;
+}
+
+#photoHover {
+  position: relative;
+  margin-left: 1rem;
+}
+
+#photoHoverText {
+  position: absolute;
+  transition: 1s ease-out;
+}
+
+#photoHoverImg {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 10px;
+  top: 1;
+  bottom: 0;
+  opacity: 0;
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  transition: 1s ease-out;
+}
+
+#photoHover:hover #photoHoverText {
+  opacity: 0;
+}
+
+#photoHover:hover #photoHoverImg {
+  width: 140px;
+  height: 140px;
+  opacity: 1;
+  transform: scale(1);
 }
 
 #tagline {
