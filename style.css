@@ -107,7 +107,6 @@ h1 {
 
 #photoHoverText {
   position: absolute;
-  transition: 1s ease-out;
 }
 
 #photoHoverImg {
@@ -125,6 +124,7 @@ h1 {
 }
 
 #photoHover:hover #photoHoverText {
+  transition: 1s ease-out;
   opacity: 0;
 }
 
