@@ -13,8 +13,8 @@
     <!-- Mobile View -->
     <div id="mobilePortfolio">
       <header>
-        <span>Projects</span>
-        <span>Contact</span>
+        <a href="#projectContainer">Projects</a>
+        <a href="/contact.html">Contact</a>
       </header>
       <section id="heroContainer">
         <div class="gradients">
@@ -64,11 +64,17 @@
                 <h4>StoryTime</h4>
                 <p>
                   GPT-3 powered story generator app with a React frontend and
-                  Express backend. The App only needs a story idea prompt from
-                  the user to generate a title, a relevant image, story entry,
-                  story body and a story ending paragraph. Generated stories can
+                  Express backend. Generated stories can
                   be downloaded as PDF's.
                 </p>
+                <ul class="projectInfoList">
+                  <h5>From a single prompt the app generates a story:</h5>
+                  <li>Image</li>
+                  <li>Title</li>
+                  <li>Entry</li>
+                  <li>Body</li>
+                  <li>Ending</li>
+                </ul>
               </div>
               <div class="mobileTechStack">
                 <h5>Tech Stack:</h5>
@@ -185,7 +191,15 @@
         </div>
       </section>
 
-      <section id="contactContainer"></section>
+      <section id="contactContainer">
+        <span class="visualCode">&lt;a href="/contact"&gt;</span>
+        <a id="contactLink" href="/contact.html">
+          <img class="envelope" id="closedEnvelope" src="/icons/closed-envelope.png" alt="closed envelope">
+          <img class="envelope" id="openEnvelope" src="/icons/open-envelope.png" alt="open envelope">
+          <h3>Contact Me</h3>
+        </a>
+        <span class="visualCode lastCode">&lt;/a&gt;</span>
+      </section>
     </div>
 
     <!-- Desktop View -->

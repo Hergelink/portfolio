@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,10 +36,16 @@ header {
   padding: 1rem 1rem;
 }
 
-header span {
+header a {
+  text-decoration: none;
+  color: white;
   padding: 0 0.5rem;
   font-weight: 700;
 }
+
+header a:hover {
+  text-decoration:underline dashed salmon;
+} 
 
 section {
   padding: 1rem 1rem;
@@ -262,6 +269,49 @@ h2 {
 
 .icons:hover {
   transform: scale(1.2);
+}
+
+/* Contact Area */
+
+#contactLink {
+  padding: 1rem 1rem;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.envelope {
+  width: 30px;
+  height: 30px;
+}
+
+#closedEnvelope {
+display: block;
+}
+
+#openEnvelope {
+display: none;
+}
+
+#contactLink:hover{
+  text-decoration: underline dashed salmon;
+}
+
+#contactLink:hover #closedEnvelope {
+  display: none;
+}
+
+#contactLink:hover #openEnvelope {
+  display: block;
+}
+
+#contactLink h3 {
+  font-size: 1.5rem;
 }
 
 /* Large Mobile or Tablet View */
