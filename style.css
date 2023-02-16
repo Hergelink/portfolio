@@ -197,6 +197,18 @@ h2 {
   font-size: 1.1rem;
 }
 
+.projectInfoList {
+  list-style-position: inside;
+}
+
+.projectInfoList h5 {
+  font-size: 1.2rem;
+}
+
+.projectInfoList li {
+  padding-top: 0.5rem;
+}
+
 .mobileTechStack {
   display: flex;
   align-items: center;
