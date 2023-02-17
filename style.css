@@ -39,13 +39,18 @@ header {
 header a {
   text-decoration: none;
   color: white;
-  padding: 0 0.5rem;
+  margin-left: 0.5rem;
   font-weight: 700;
+  background-image: linear-gradient(90deg, white, rgb(70, 64, 235));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
 }
 
 header a:hover {
-  text-decoration:underline dashed salmon;
-} 
+  background-size: 100% 2px;
+}
 
 section {
   padding: 1rem 1rem;
@@ -283,7 +288,18 @@ h2 {
   text-decoration: none;
 }
 
+#contactLink h3 {
+  font-size: 1.5rem;
+  background-image: linear-gradient(90deg, white, rgb(70, 64, 235));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+}
 
+#contactLink:hover h3 {
+  background-size: 100% 2px;
+}
 
 .envelope {
   width: 30px;
@@ -291,15 +307,11 @@ h2 {
 }
 
 #closedEnvelope {
-display: block;
+  display: block;
 }
 
 #openEnvelope {
-display: none;
-}
-
-#contactLink:hover{
-  text-decoration: underline dashed salmon;
+  display: none;
 }
 
 #contactLink:hover #closedEnvelope {
@@ -308,10 +320,6 @@ display: none;
 
 #contactLink:hover #openEnvelope {
   display: block;
-}
-
-#contactLink h3 {
-  font-size: 1.5rem;
 }
 
 /* Large Mobile or Tablet View */
@@ -385,9 +393,7 @@ display: none;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-
     color: white;
-
     background-color: #c4454a;
     height: 10%;
     width: 10%;
@@ -398,9 +404,12 @@ display: none;
     animation-iteration-count: 5;
   }
 
-  #contactContainer span {
+  #contactContainer img {
+    display: block;
     opacity: 1;
-    font-size: 3.5rem;
+    width: 50px;
+    height: 50px;
+    padding: 0.2rem;
   }
 
   .tile:nth-child(1) {
