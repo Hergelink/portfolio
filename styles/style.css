@@ -170,19 +170,17 @@ h1 {
 /* Project Section */
 
 #projectGalleryLinksDiv {
- display: flex; 
+  display: flex;
 }
 
 #galleryLink {
- display: none;
+  display: none;
 }
 
 h2 {
   font-size: 3rem;
   padding-left: 0.5rem;
 }
-
-
 
 #projects {
   display: flex;
@@ -350,6 +348,15 @@ h2 {
 }
 
 @media (min-width: 1182px) {
+  header {
+    width: 70%;
+    margin: 1rem auto;
+  }
+
+  section {
+    width: 70%;
+    margin: 4rem auto;
+  }
 
   #projectGalleryLinksDiv {
     align-items: center;
