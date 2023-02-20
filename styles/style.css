@@ -169,10 +169,20 @@ h1 {
 
 /* Project Section */
 
+#projectGalleryLinksDiv {
+ display: flex; 
+}
+
+#galleryLink {
+ display: none;
+}
+
 h2 {
   font-size: 3rem;
   padding-left: 0.5rem;
 }
+
+
 
 #projects {
   display: flex;
@@ -339,185 +349,36 @@ h2 {
   }
 }
 
-/* Desktop View */
-
 @media (min-width: 1182px) {
-  body {
-    margin: 0px;
-    height: 100vh;
-    overflow: hidden;
+
+  #projectGalleryLinksDiv {
+    align-items: center;
+    gap: 20px;
   }
 
-  #mobilePortfolio {
-    display: none;
-  }
-
-  #gallery {
+  #galleryLink {
     display: block;
-    margin: 0px;
-    height: 120vmax;
-    width: 120vmax;
-    position: absolute;
-  }
-
-  .tile {
-    border-radius: 1vmax;
-    position: absolute;
-    transition: transform 800ms ease;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tile:hover {
-    transform: scale(1.1);
-  }
-
-  .tile:hover > img {
-    opacity: 1;
-    transform: scale(1.01);
-  }
-
-  .tile > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: inherit;
-    opacity: 0;
-    transition: opacity 800ms ease, transform 800ms ease;
-  }
-
-  #contactContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
-    color: white;
-    background-color: #c4454a;
-    height: 10%;
-    width: 10%;
-    left: 63%;
-    top: 50%;
-    position: relative;
-    animation: pulse 2s;
-    animation-iteration-count: 5;
   }
 
-  #contactContainer img {
-    display: block;
-    opacity: 1;
-    width: 50px;
-    height: 50px;
-    padding: 0.2rem;
-  }
-
-  .tile:nth-child(1) {
-    background-color: #d6575b;
-    height: 15%;
-    width: 27%;
-    left: 5%;
-    top: 5%;
-  }
-
-  .tile:nth-child(2) {
-    background-color: #c06568;
-    height: 24%;
-    width: 17%;
-    left: 42%;
-    top: 12%;
-  }
-
-  .tile:nth-child(3) {
-    background-color: #672325;
-    height: 28%;
-    width: 25%;
-    left: 10%;
-    top: 28%;
-  }
-
-  .tile:nth-child(4) {
-    background-color: #7b292c;
-    height: 25%;
-    width: 20%;
-    left: 40%;
-    top: 45%;
-  }
-
-  /* StoryTime */
-  .tile:nth-child(5) {
-    background-color: #8e2f32;
-    height: 26%;
-    width: 30%;
-    left: 8%;
-    top: 65%;
-  }
-
-  .tile:nth-child(6) {
-    background-color: #a23539;
-    height: 32%;
-    width: 12%;
-    left: 82%;
-    top: 42%;
-  }
-
-  .tile:nth-child(7) {
-    background-color: #b63a3f;
-    height: 18%;
-    width: 12%;
-    left: 50%;
-    top: 74%;
-  }
-
-  .tile:nth-child(8) {
-    background-color: #c4454a;
-    height: 24%;
-    width: 16%;
-    left: 75%;
-    top: 6%;
-  }
-
-  /* QR Code */
-  .tile:nth-child(9) {
-    background-color: #c4454a;
-    height: 10%;
-    width: 8%;
-    left: 82%;
-    top: 82%;
-  }
-
-  .tile .techStack {
+  #openEye {
     display: none;
   }
 
-  .tile .techStack img {
-    width: 100%;
-    height: 100%;
+  #closedEye {
+    display: block;
   }
 
-  .tile:hover .techStack {
-    display: flex;
-    gap: 5px;
-    position: absolute;
-    bottom: -3.2rem;
+  #galleryLink:hover #openEye {
+    display: block;
   }
 
-  .stackIcon {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 #c44549c8;
+  #galleryLink:hover #closedEye {
+    display: none;
   }
 
-  70% {
-    box-shadow: 0 0 0 10px #c4454945;
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 #c4454924;
+  .eyeIcon {
+    width: 30px;
+    height: 30px;
   }
 }

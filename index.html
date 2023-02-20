@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <title>Hergelink Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <!-- Mobile View -->
     <div id="mobilePortfolio">
       <header>
         <a href="#projectContainer">Projects</a>
@@ -46,7 +44,16 @@
 
       <section id="projectContainer">
         <span class="visualCode">&lt;h2&gt;</span>
-        <h2>Projects</h2>
+        <div id="projectGalleryLinksDiv">
+          <h2>Projects</h2>
+          <div>
+            <a href="/gallery-view.html" id="galleryLink">
+              <img class="eyeIcon" id="openEye" src="/icons/open-eye.png" alt="open eye">
+              <img class="eyeIcon" id="closedEye" src="/icons/closed-eye.png" alt="closed eye">
+            </a>
+          </div>
+        </div>
+        
         <span class="visualCode lastCode">&lt;/h2&gt;</span>
         <div id="projects">
           <!-- First Project -->
@@ -209,171 +216,6 @@
         </a>
         <span class="visualCode lastCode">&lt;/a&gt;</span>
       </section>
-    </div>
-
-    <!-- Desktop View -->
-    <div id="gallery">
-      <a href="https://codeanalyzer.onrender.com/" target="_blank" class="tile"
-        ><img
-          src="/images/codeanalyzer.webp"
-          alt="codeanalyzer"
-          loading="lazy"
-        />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/html-5.png" alt="html logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/css-3.png" alt="css logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/nodejs.png" alt="nodejs logo" />
-          </div>
-          <div class="stackIcon">
-            <img
-              loading="lazy"
-              src="/icons/openai-logo.png"
-              alt="open ai logo"
-            />
-          </div>
-        </div>
-      </a>
-
-      <a href="https://frontender-app.netlify.app/" target="_blank" class="tile"
-        ><img src="/images/frontender.webp" alt="frontender" loading="lazy" />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/css-3.png" alt="css logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/html-5.png" alt="html logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/react.png" alt="react logo" />
-          </div>
-        </div>
-      </a>
-
-      <a href="https://klevvvers.netlify.app/" target="_blank" class="tile"
-        ><img src="/images/klevvvers.webp" alt="klevvvers" loading="lazy" />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/html-5.png" alt="html logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/css-3.png" alt="css logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/react.png" alt="react logo" />
-          </div>
-          <div class="stackIcon">
-            <img
-              loading="lazy"
-              src="/icons/openai-logo.png"
-              alt="open ai logo"
-            />
-          </div>
-        </div>
-      </a>
-
-      <a href="https://github.com/Hergelink" target="_blank" class="tile">
-        <img src="/images/github.webp" alt="pomodi" loading="lazy" />
-      </a>
-
-      <a href="https://storyai-ot15.onrender.com/" target="_blank" class="tile"
-        ><img src="/images/storytime.webp" alt="storytime" loading="lazy" />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/react.png" alt="react logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/nodejs.png" alt="nodejs logo" />
-          </div>
-          <div class="stackIcon">
-            <img
-              loading="lazy"
-              src="/icons/openai-logo.png"
-              alt="open ai logo"
-            />
-          </div>
-        </div>
-      </a>
-
-      <a
-        href="https://wondrous-kashata-5273bd.netlify.app/"
-        target="_blank"
-        class="tile"
-        ><img src="/images/studiohut.webp" alt="studiohut" loading="lazy" />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/html-5.png" alt="html logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/css-3.png" alt="css logo" />
-          </div>
-        </div>
-      </a>
-      <a
-        href="https://neon-dasik-011c89.netlify.app/"
-        target="_blank"
-        class="tile"
-        ><img src="/images/tshirt.webp" alt="tshirt" loading="lazy" />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/html-5.png" alt="html logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/css-3.png" alt="css logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/react.png" alt="react logo" />
-          </div>
-        </div>
-      </a>
-
-      <a href="https://wishcuses.netlify.app/" target="_blank" class="tile"
-        ><img src="/images/wishcuses.webp" alt="wishcuses" loading="lazy" />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/html-5.png" alt="html logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/css-3.png" alt="css logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/react.png" alt="react logo" />
-          </div>
-          <div class="stackIcon">
-            <img
-              loading="lazy"
-              src="/icons/openai-logo.png"
-              alt="open ai logo"
-            />
-          </div>
-        </div>
-      </a>
-
-      <a
-        href="https://euphonious-basbousa-6279b5.netlify.app/"
-        target="_blank"
-        class="tile"
-        ><img src="/images/qr-code.webp" alt="qr-code" loading="lazy" />
-        <div class="techStack">
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/html-5.png" alt="html logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/tailwind.svg" alt="tailwind logo" />
-          </div>
-          <div class="stackIcon">
-            <img loading="lazy" src="/icons/js.png" alt="javascript logo" />
-          </div>
-        </div>
-      </a>
-
-      <a href="/contact.html" class="tile" id="contactContainer">
-        <img src="/icons/closed-envelope.png" alt="contact envelope" />
-      </a>
     </div>
   </body>
 </html>

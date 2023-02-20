@@ -26,7 +26,9 @@ function checkScreenSize() {
         }
       );
     };
-  } 
+  } else {
+    window.history.back();
+  }
 }
 
 setInterval(checkScreenSize, 1000);
