@@ -40,6 +40,7 @@ header a {
   text-decoration: none;
   color: white;
   margin-left: 0.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   background-image: linear-gradient(90deg, white, rgb(70, 64, 235));
   background-size: 0% 2px;
