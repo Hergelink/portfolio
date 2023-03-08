@@ -122,12 +122,13 @@ body {
       top: 5%;
     }
   
+   
     .tile:nth-child(2) {
-      background-color: #c06568;
-      height: 24%;
-      width: 17%;
-      left: 42%;
-      top: 12%;
+      background-color: #8e2f32;
+      height: 28%;
+      width: 20%;
+      left: 9%;
+      top: 63%;
     }
   
     .tile:nth-child(3) {
@@ -148,11 +149,11 @@ body {
   
     /* StoryTime */
     .tile:nth-child(5) {
-      background-color: #8e2f32;
-      height: 26%;
-      width: 30%;
-      left: 8%;
-      top: 65%;
+      background-color: #c06568;
+      height: 24%;
+      width: 27%;
+      left: 42%;
+      top: 12%;
     }
   
     .tile:nth-child(6) {
@@ -205,8 +206,8 @@ body {
     }
   
     .stackIcon {
-      width: 35px;
-      height: 35px;
+      width: 33px;
+      height: 33px;
     }
   }
   
