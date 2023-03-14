@@ -72,13 +72,12 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: white;
+    /* color: white; */
     background-color: #c4454a;
     height: 6%;
     width: 6%;
     left: 63%;
     top: 50%;
-    /* position: relative; */
     position: absolute;
     animation: pulse 2s;
     animation-iteration-count: 5;
@@ -90,6 +89,7 @@ body {
     width: 50px;
     height: 50px;
     padding: 0.2rem;
+    border-radius: 0;
   }
 
   #viewSelectContainer {
@@ -168,7 +168,7 @@ body {
     height: 18%;
     width: 12%;
     left: 66%;
-    top: 62%;
+    top: 58%;
   }
 
   .tile:nth-child(8) {
