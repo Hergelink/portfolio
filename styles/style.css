@@ -369,6 +369,7 @@ h2 {
 
   section {
     width: 70%;
+    padding: 0 1rem;
     margin: 4rem auto;
   }
 
@@ -401,5 +402,14 @@ h2 {
   .eyeIcon {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (min-width: 1498px) {
+ 
+  section {
+  
+    padding: 0 12rem;
+   
   }
 }
