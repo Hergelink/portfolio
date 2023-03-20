@@ -279,6 +279,15 @@ h2 {
   font-weight: 700;
 }
 
+.long {
+  width: 230px;
+}
+
+.desc {
+  color: rgb(74, 74, 74);
+  font-weight: 400;
+}
+
 .icons {
   width: 34px;
   height: 34px;
